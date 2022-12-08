@@ -1,0 +1,28 @@
+.footer {
+  background-color: var(--bg-color-secondary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__link {
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
+}
+
+.footer__thumb {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-color-primary);
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
