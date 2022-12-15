@@ -141,29 +141,59 @@
           <ul class="list activity__list">
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
-                  src="./images/laptop.jpg"
-                  alt="щось набираємо"
-                  width="370"
-                  class="activity__img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/laptop.jpg 1x, ./images/laptop2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/laptop.jpg"
+                    alt="щось набираємо"
+                    width="370"
+                    class="activity__img"
+                  />
+                </picture>
+
                 <p class="activity__text activity__text--desk">Десктопні додатки</p>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
-                <img src="./images/phone.jpg" alt="розробляємо" width="370" class="activity__img" />
+                <picture>
+                  <source
+                    srcset="./images/phone.jpg 1x, ./images/phone2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/phone.jpg"
+                    alt="розробляємо"
+                    width="370"
+                    class="activity__img"
+                  />
+                </picture>
+
                 <p class="activity__text activity__text--mob">Мобільні додатки</p>
               </div>
             </li>
             <li class="activity__item">
               <div class="activity__thumb">
-                <img
-                  src="./images/laptop-color.jpg"
-                  alt="підбираємо колір"
-                  width="370"
-                  class="activity__img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/laptop-color.jpg 1x, ././images/laptop-color2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/laptop-color.jpg"
+                    alt="підбираємо колір"
+                    width="370"
+                    class="activity__img"
+                  />
+                </picture>
+
                 <p class="activity__text activity__text--design">Дизайнерські рішення</p>
               </div>
             </li>
@@ -283,7 +313,7 @@
                 <source
                   srcset="
                     ./images/mob-mykola-tarasov1x.jpg 1x,
-                    ./images/mob-mykola-tarasov1x.jpg 2x
+                    ./images/mob-mykola-tarasov2x.jpg 2x
                   "
                   media="(max-width: 767px)"
                   type="image/jpg"
@@ -570,37 +600,35 @@
         <form>
           <label class="modal__form">
             <span class="modal__name">Ім'я</span>
-            <div class="modal__textarea">
+            <span class="modal__textarea">
               <input type="text" name="name" class="modal__input" />
               <svg width="18px" height="18px" class="modal__icon">
                 <use href="./images/icon.svg#icon-person"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal__form">
             <span class="modal__name">Телефон</span>
-            <div class="modal__textarea">
+            <span class="modal__textarea">
               <input type="tel" name="name" class="modal__input" />
               <svg width="18px" height="18px" class="modal__icon">
                 <use href="./images/icon.svg#icon-phone-modal"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal__form">
             <span class="modal__name">Пошта</span>
-            <div class="modal__textarea">
+            <span class="modal__textarea">
               <input type="email" name="name" class="modal__input" />
               <svg width="18px" height="18px" class="modal__icon">
                 <use href="./images/icon.svg#icon-email-modal"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="comment">
-            <div class="modal__name">Коментар</div>
+            <span class="modal__name">Коментар</span>
             <textarea
-              name=""
-              cols=""
-              rows=""
+              name="comment"
               placeholder="Введіть текст"
               class="comment__textarea modal__input"
             ></textarea>
