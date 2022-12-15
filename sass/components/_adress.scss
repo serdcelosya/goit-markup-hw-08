@@ -1,7 +1,15 @@
 .footer__adress {
   width: 231px;
-  margin-right: 70px;
+
   display: inline-block;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .adress__list {
@@ -12,8 +20,10 @@
   font-style: normal;
 }
 
-.adress__items:not(:last-child) {
-  margin-bottom: 8px;
+.adress__items {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .adress__map {

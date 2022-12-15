@@ -1,13 +1,26 @@
 .contact {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
   margin-left: auto;
-  align-items: center;
 }
 
 .contact__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (max-width: 767px) {
+    margin-top: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 
 .post-link {
@@ -15,8 +28,10 @@
 }
 
 .contact__link {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
 
   align-items: center;
@@ -33,6 +48,21 @@
   &:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
+  }
+}
+
+.contact__link--tel {
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    color: var(--accent-color);
+  }
+}
+
+.contact__link--mail {
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
   }
 }
 

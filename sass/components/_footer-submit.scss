@@ -23,6 +23,9 @@
 }
 
 .form__icon {
+  @media screen and (max-width: 767px) {
+    margin-left: 12px;
+  }
   @media screen and(min-width:1200px) {
     margin-left: 10px;
   }

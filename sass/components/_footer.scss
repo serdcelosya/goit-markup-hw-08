@@ -7,12 +7,31 @@
   @media screen and (min-width: 1200px) {
     display: inline-block;
   }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    text-align: center;
+  }
 }
 
 .footer__thumb {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.footer__tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
   }
 }
 
@@ -24,5 +43,8 @@
   text-transform: uppercase;
   color: var(--bg-color-primary);
   margin-bottom: 20px;
-  padding-top: 12px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
